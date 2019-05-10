@@ -1,0 +1,17 @@
+
+$FONT: "exo";
+$FONT2: "TrebuchetMS";
+$blue: #1698d9;
+$red:#d91667;
+$grey:#b3b3b3;
+
+
+body, html {
+  font-family: $FONT;
+  height: 100%;
+  color: black;
+}
+body{
+  background-image: url(/web/image/pattern.jpg);
+  background-repeat: repeat;
+}
