@@ -72,11 +72,11 @@ gulp.task('style:build', function (done) {
     const pathes = [path];
     pathes.map(function (path) {
         gulp.src(path.src.style)
-            .pipe(sourcemaps.init())
+            // .pipe(sourcemaps.init())
             .pipe(sass()).on("error", sass.logError)
             .pipe(postcss([autoprefixer({browsers: ['last 1616 version']})]))
             .pipe(cssnano({autoprefixer: false, convertValues: false, zindex: false}))
-            .pipe(sourcemaps.write())
+            // .pipe(sourcemaps.write())
             .pipe(gulp.dest(path.build.css))
             .pipe(browserSync.stream());
     });
